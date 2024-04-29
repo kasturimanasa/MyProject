@@ -1,0 +1,155 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home Page</title>
+    </head>
+    <body bgcolor="white">
+    <center><p><img class="img-circle" src="images/logo.png" height="100" width="100"> <font size="10dp" color="blue" style="position: relative;bottom:  35px;"> Content Strategy Proposal for a Health and Wellness Website</font></p></center>
+    <marquee><font color="blue">Welcome to the content strategy plan for Health and Wellness Website. 
+ </font></marquee>
+    <p><ul>
+        <li class="lwidth"><a class="active" href="index.html">Home</a></li>
+  <li class="lwidth"><a href="about.html">About</a></li>
+  
+  <li class="lwidth"><a href="manasa_resume.pdf">Resume</a></li>
+ <li class="dropdown" class="lwidth">
+   
+ </li>
+  
+</ul></p>
+        
+        
+        <script> var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}</script>
+
+
+<style>
+    .lwidth{
+        width: 230px;
+    }
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+    .dropdown-content a {
+    color: #C7C9CD;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+    li.dropdown {
+        width: 160px;
+    display: inline-block;
+}
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+    .img-circle {
+    border-radius: 50%;
+}
+    div#carousel { 
+  perspective: 1200px; 
+  background: #100000; 
+  padding-top: 10%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg);}
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+</style>
+
+
+<div id="carousel">
+  <figure id="spinner">
+    <img src="images/1.jpg" height="250" width="250" alt>
+    <img src="images/2.png" height="250" width="250"  alt>
+    <img src="images/3.jpg"  height="250" width="250" alt>
+    <img src="images/4.jpeg" height="250" width="250" alt>
+    <img src="images/5.png" height="250" width="250" alt>
+    <img src="images/6.jpg" height="250" width="250" alt>
+    <img src="images/7.png" height="250" width="250" alt>
+    <img src="images/8.png" height="250" width="250" alt>
+    
+  </figure>
+</div>
+
+<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+    </body>
+</html>
